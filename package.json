@@ -1,15 +1,22 @@
 {
-  "name": "typescript-vite-starter",
+  "name": "pi-gym",
   "private": true,
-  "version": "0.0.0",
+  "version": "0.0.1",
+  "type": "module",
   "scripts": {
     "dev": "vite",
+    "dev:exposed": "vite --host",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "lint": "eslint src",
+    "lint:fix": "eslint src"
   },
   "devDependencies": {
+    "alpinejs": "^3.13.10",
+    "eslint": "^8.57.0",
     "sass": "^1.49.9",
     "typescript": "^4.5.4",
+    "typescript-eslint": "^7.9.0",
     "vite": "^2.8.0"
   }
 }
